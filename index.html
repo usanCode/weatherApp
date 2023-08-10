@@ -25,72 +25,59 @@
 
       <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 
-    <title>weatherApp</title>
   </head>
   <body>
+    <div class="Container">
+      
+        <div class="subContainer">
 
-    <div class="Container" >
-      <div >
-       <ul class="city"> 
-          <li ><a href="#" id="listCty">Bujumbura </a> </li>
-          <li ><a href="#" id="listCty">Goma </a></li>
-          <li ><a href="#" id="listCty">Kampala </a></li>
-          <li ><a href="#" id="listCty">London </a></li>
-          <li ><a href="#" id="listCty">Johannesburg </a></li>
-          <li> <a href="#" id="listCty">Nairobi </a></li>
-          <li ><a href="#" id="listCty">New-York </a></li>
-          <li ><a href="#" id="listCty">Paris </a></li>
-       </ul>
-      </div>
-      <br/>
+          <div >
+            <ul class="city" id="cityList"> 
+               <li ><a href="#" id="listCty">Bujumbura </a> </li>
+               <li ><a href="#" id="listCty">Goma </a></li>
+               <li ><a href="#" id="listCty">Kampala </a></li>
+               <li ><a href="#" id="listCty">London </a></li>
+               <li ><a href="#" id="listCty">Johannesburg </a></li>
+               <li> <a href="#" id="listCty">Nairobi </a></li>
+               <li ><a href="#" id="listCty">New-York </a></li>
+               <li ><a href="#" id="listCty">Paris </a></li>
+            </ul>
+           </div>
+           <br/>
 
-      <div class="subContainer">
-              <div>
-                <form id="search-form">
-                  <input type="text" placeholder="Search a city ..." class="text"
+           <form id="search-form" class="mb-3">
+            <input type="text" placeholder="Search a city ..." class="text"
                     id="city-input" />
                   <input type="button" class="search" value="Search" id="searchButton" />
                   <input type="button" class="current"value="Current" id="currentButton" />
-                </form>
-              </div>
-              <br/>
-              <br/>
-              <br/>
-     
-              <div>
-          <h1 id="cityName" ></h1>
-          <p id="currentDay-hour">Friday 15:25 minutes</p>
-          
-                  
-              </div>
-              <br/>
-     
+          </form>
+        </br>
+      </br>
 
-              <div class="row">
-                <div class="col-6">
-                  <div class="clearfix weather-temperature">
-                    <img src="" alt="Clear" id="icon" class="float-left" />
-                    <div class="float-left">
-                      <strong id="temperature"></strong
-                      ><span class="units"> °C</span>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="weather-forecast" id="forecast"></div>
-            </div>
-             
+        <div >
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
               
-             
-  
-
-
-
-
-
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+       
+     
+    </div>
     <script src="./app.js"></script>
   </body>
-</html>
-
-
+</html
